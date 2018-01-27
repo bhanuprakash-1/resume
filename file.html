@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Siddhant Saoji</title>
+</head>
+<body background="background.jpg" >
+<h1><center>Welcome!</center></h1>
+
+<div col = 2 align ="center">
+    <button type="button" onclick="res()">Resume</button>
+
+    <button type="button" onclick="contact()">Contact</button>
+</div><br><div id="main"><p id="resume"></p></div>
+<script>
+    function sub() {
+        alert("Thank You for submitting")
+    }
+    function res() {
+        document.getElementById("resume").innerHTML="";
+        document.getElementById("resume").insertAdjacentHTML('afterbegin', '<br><center><h1>Resume</h1></center><br><table border="1" width="100%" height style="color: black;border-collapse: collapse; border-width: medium"><tr><th colspan="2">Personal details      </th></tr><tr><td>Name</td><td>Siddhant Saoji</td></tr><tr><td>Address</td><td>Room No 141,Blue 1 Hostel,IIT Jodhpur,Karwad,Jodhpur</td></tr><tr>        <td>Email</td>  <td>saoji.1@iitj.ac.in</td></tr><tr><th colspan="2">Education</th></tr>  <tr>       <table border="1" width="100%" height style="color: black;border-collapse: collapse; border-width: medium">       <tr> <th>Institute</td><td>Year attended</td>   <td>Remark</td> </th></tr> <tr><td> Stepping Stones High School</td><td>2005-2015</td><td>Class 10</td></tr><tr><td> Deogiri Junior College</td><td>2015-2017</td><td>Class 11 and 12</td></tr><tr><td>IIT Jodhpur</td><td>2017-</td><td>B.tech Mechanical</td></tr></table></tr><table border="1" width="100%" height style="color: black;border-collapse: collapse; border-width: medium"><tr><th colspan="2"><b>Hobbies</b></th></tr><tr><td><ul><li>Listening Music</li><li>Playing computer games</li></ul></td><td></td></tr></table></table>');
+
+    }
+    function contact() {
+        document.getElementById("resume").innerHTML="";
+        document.getElementById("resume").insertAdjacentHTML('afterbegin','<br> <form onsubmit="sub()"><fieldset><center><legend>Contact</legend><br><label>Name: <input type="text"></label><br><label>Email: <input type="Text"></label><br><label>Mobile<input type="text"></label><br><input type="submit" value="Submit" ></center></fieldset></form> ');}
+
+</script>
+
+</body>
+</html>
