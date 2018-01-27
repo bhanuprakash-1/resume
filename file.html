@@ -5,12 +5,52 @@
     <title>Siddhant Saoji</title>
 </head>
 <body background="background.jpg" >
+<style>
+    .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #f4511e;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+       
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+</style>
 <h1><center>Welcome!</center></h1>
 
 <div col = 2 align ="center">
-    <button type="button" onclick="res()">Resume</button>
+    <button class="button" type="button" onclick="res()"><span>Resume</span></button>
 
-    <button type="button" onclick="contact()">Contact</button>
+    <button class="button" type="button" onclick="contact()"><span>Contact</span></button>
 </div><br><div id="main"><p id="resume"></p></div>
 <script>
     function sub() {
