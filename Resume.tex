@@ -1,0 +1,270 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Siddhant}{Saoji}{ \urlstyle{same}\url{sziddhant.github.io} \\
+\href{mailto:saoji.1@iitj.ac.in}{saoji.1@iitj.ac.in} | (+91)9673262082
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{IIT Jodhpur}
+\descript{Sophomore BTech in\\ Mechanical Engineering}
+\location{Expected Dec 2021 \\ GPA: \textbf{8.66}/10(upto 3\textsuperscript{rd}
+ semester)}
+ \sectionsep
+
+
+\subsection{Deogiri Junior College}
+\descript{Higher Secondary (SSC)}
+\location{2017| Aurangabad, MH}
+\location{ Percentage: 87.04\%}
+\sectionsep
+\subsection{\mbox{Stepping Stones High School}}
+\descript{Secondary (CBSE)}
+\location{2015| Aurangabad, MH}
+\location{ CGPA: 10/10}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/sziddhant}{\textbf{sziddhant}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/siddhant-saoji}{\textbf{siddhant-saoji}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Undergraduate}
+
+Linear Algebra and Calculus \\
+Computer Programming \\
+Engineering Mechanics \\
+Mechatronics \\
+Mechanics of Solids \\
+System Exploration and Workshop \\
+Kinematics of Machines and Mechanisms*\\
+\small{*ongoing courses}\\
+\sectionsep
+
+\subsection{MOOC}
+Introduction to Image Processing* \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Languages:}
+\textbullet{}C/C++ \\\textbullet{}   Python \\
+\subsection{Softwares}
+\textbullet{} Matlab \\\textbullet{} Cinderella 2.0 
+\subsection{Other technologies}
+\textbullet{} Arduino \\
+\textbullet{} NodeMCU \\
+\textbullet{} Raspberry Pi \\
+\textbullet{} Beaglebone \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{ergonomics of on-screen keyboard* }
+\descript{| BTech Project }
+\location{Guide: Dr B.Ravindra | IIT Jodhpur}
+\vspace{\topsep} 
+\begin{tightemize}
+\item Analyzed geometric centroid computed using various \textbf{image processing} algorithms.
+\item Studying the impact of pressure and finger used on the centroid
+\item  Applying the concept for better ergonomics. \end{tightemize}
+\sectionsep
+
+\runsubsection{NETRA*}
+\descript{| IMU based indoor navigation }
+\location{Texas Instruments IICDC}
+\begin{tightemize}
+\item Used dead reckoning to navigate indoors without requiring expensive infrastructure
+
+\item Used \textbf{Beaglebone black} and 9 axis IMU for the computation.
+\item Audio and haptic feedback for navigation especially the visually impaired\end{tightemize}
+\sectionsep
+
+
+\runsubsection{SecureIT}
+\descript{| Gymkhana Project |IIT Jodhpur}
+\location{Open Sourced \href{https://github.com/sziddhant/SecureIT}{{\underline{Github}}}}
+
+\begin{tightemize}
+\item Built a smart security solution for Science and technology society of IITJ to deploy in its rooms.
+\item Made an \textbf{android app} to generate OPT and monitor the room.
+\item Used multiple layers of security such as fingerprint authentication and face recognition 
+Technologies: - \textbf{Raspberry Pi, Python,Wit.ai, Flask, MySQL}
+\end{tightemize}
+\sectionsep
+
+
+
+\runsubsection{Bo}
+\descript{| Chat Bot |Microsoft Code.Fun.Do++ }
+\location{Open Sourced \href{https://github.com/sziddhant/Bo}{{\underline{Github}}} | Submission video \href{https://www.youtube.com/watch?v=NcxAOSKoHH8}{\underline{YouTube}}}
+
+\begin{tightemize}
+\item Built a multi-functional chat bot deployed on \textbf{Facebook Messenger}, which can be used by affected people as well as rescue teams in case of a disaster.
+\item 
+Technologies: - \textbf{Microsoft Azure, Python, LUIS, Flask, MySQL}
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Honors and Achievements}
+%\vspace{\topsep}
+%\begin{tightemize}
+%\item First position among 21 IITs in BETiC Medical Challenge %hosted by IIT Bombay during 7th Inter IIT Tech Meet
+%\item Gold Level on Hackerrank in C++ (5 Star)
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Positions of Responsibility} 
+
+\runsubsection{Aero Modelling Club}
+\descript{|Captain}
+\location{Aug 2018 – Present | IIT Jodhpur}
+\begin{tightemize}
+\item Conducted Open and internal club sessions
+\item Organized guest lectures and workshops
+\item Organized club events in Nimble 2019
+\item Built RC plane and a Quad-copter
+\end{tightemize}
+
+\runsubsection{Quiz Club}
+\descript{|Vice Captain}
+\location{Aug 2018 – Present | IIT Jodhpur}
+\begin{tightemize}
+\item Conducted Open and internal Quizzing sessions
+\item Organized and hosted inter-college Quiz in Ignus 2019 
+\end{tightemize}
+
+\runsubsection{Robotics Club}
+\descript{|Core Member}
+\location{Aug 2018 – Present | IIT Jodhpur}
+\begin{tightemize}
+\item Made various projects such as room automation
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXTRACURRICULAR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Extracurricular} 
+\begin{tightemize}
+\vspace{\topsep} 
+\item Assistant-Head of services for Ignus 2019
+\item Played for the college basketball team in Sangram 2018 organized by IIT Roorkee.
+\item Participated in Tech-Fest organized by IIT Bombay.
+
+\end{tightemize}
+
+
+
+\end{minipage} 
+\end{document}
